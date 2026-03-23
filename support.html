@@ -6,6 +6,7 @@
   <title>AeroBooks — Support</title>
   <meta name="description" content="AeroBooks Support" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -15,23 +16,58 @@
         <span>AeroBooks</span>
       </a>
 
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="support.html">Support</a>
-      </nav>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="index.html">
+            <span data-lang="en">Home</span>
+            <span data-lang="de">Start</span>
+          </a>
+          <a href="privacy.html">
+            <span data-lang="en">Privacy</span>
+            <span data-lang="de">Datenschutz</span>
+          </a>
+          <a href="support.html" class="active">
+            <span data-lang="en">Support</span>
+            <span data-lang="de">Support</span>
+          </a>
+        </nav>
+
+        <div class="controls">
+          <div class="segmented" aria-label="Language switcher">
+            <button type="button" data-lang-button="de">DE</button>
+            <button type="button" data-lang-button="en">EN</button>
+          </div>
+
+          <div class="segmented" aria-label="Theme switcher">
+            <button type="button" data-theme-button="light">☀️</button>
+            <button type="button" data-theme-button="auto">◐</button>
+            <button type="button" data-theme-button="dark">🌙</button>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="page-hero">
       <div class="container">
-        <div class="hero-card">
-          <span class="eyebrow">Support</span>
-          <h1>We’re here to help.</h1>
-          <p>
-            Welcome to AeroBooks Support. Here you can find contact information,
-            common troubleshooting steps, and help for the app’s core features.
+        <div class="page-hero-card">
+          <span class="eyebrow">
+            <span class="eyebrow-icon">💬</span>
+            <span data-lang="en">Support</span>
+            <span data-lang="de">Support</span>
+          </span>
+
+          <h1 data-lang="en">We’re here to help.</h1>
+          <h1 data-lang="de">Wir helfen dir weiter.</h1>
+
+          <p data-lang="en">
+            Welcome to AeroBooks Support. Find contact details, common troubleshooting steps,
+            and help for the app’s core features.
+          </p>
+          <p data-lang="de">
+            Willkommen beim AeroBooks Support. Hier findest du Kontaktinformationen,
+            häufige Problemlösungen und Hilfe zu den wichtigsten App-Funktionen.
           </p>
         </div>
       </div>
@@ -40,55 +76,128 @@
     <section class="content">
       <div class="container">
         <article class="content-card">
-          <h2>Contact</h2>
+          <h2 data-lang="en">Contact</h2>
+          <h2 data-lang="de">Kontakt</h2>
+
           <div class="info-list">
             <div class="info-item">
-              <strong>Name</strong>
+              <strong data-lang="en">Name</strong>
+              <strong data-lang="de">Name</strong>
               Enzo Kaiser
             </div>
+
             <div class="info-item">
-              <strong>Email</strong>
+              <strong data-lang="en">Email</strong>
+              <strong data-lang="de">E-Mail</strong>
               <a href="mailto:hello.aerostudios@gmail.com">hello.aerostudios@gmail.com</a>
             </div>
           </div>
 
-          <h2>Help Topics</h2>
+          <h2 data-lang="en">Help Topics</h2>
+          <h2 data-lang="de">Hilfethemen</h2>
 
           <div class="info-list">
             <div class="info-item">
-              <strong>Sign in with Apple</strong>
-              If Sign in with Apple does not work, make sure your internet connection is active, restart the app, and confirm that Sign in with Apple is available on your device.
+              <strong data-lang="en">Sign in with Apple</strong>
+              <strong data-lang="de">Sign in with Apple</strong>
+
+              <span data-lang="en">
+                If Sign in with Apple does not work, make sure your internet connection is active,
+                restart the app, and confirm that Sign in with Apple is available on your device.
+              </span>
+              <span data-lang="de">
+                Wenn Sign in with Apple nicht funktioniert, prüfe deine Internetverbindung,
+                starte die App neu und kontrolliere, ob Sign in with Apple auf deinem Gerät verfügbar ist.
+              </span>
             </div>
 
             <div class="info-item">
-              <strong>Notifications</strong>
-              If streak reminders do not arrive, open iPhone Settings, choose AeroBooks, allow notifications, and check that the reminder time is enabled in AeroBooks settings.
+              <strong data-lang="en">Notifications</strong>
+              <strong data-lang="de">Benachrichtigungen</strong>
+
+              <span data-lang="en">
+                If streak reminders do not arrive, open iPhone Settings, choose AeroBooks,
+                allow notifications, and check that the reminder time is enabled in AeroBooks settings.
+              </span>
+              <span data-lang="de">
+                Wenn Streak-Erinnerungen nicht ankommen, öffne die iPhone-Einstellungen,
+                wähle AeroBooks, erlaube Benachrichtigungen und prüfe in der App die Erinnerungszeit.
+              </span>
             </div>
 
             <div class="info-item">
-              <strong>iCloud Backup</strong>
-              If backup or restore does not work, make sure iCloud Drive is enabled, confirm that you are signed into the correct Apple ID, and check whether AeroBooks has iCloud access.
+              <strong data-lang="en">iCloud Backup</strong>
+              <strong data-lang="de">iCloud-Backup</strong>
+
+              <span data-lang="en">
+                If backup or restore does not work, make sure iCloud Drive is enabled,
+                confirm that you are signed into the correct Apple ID, and check whether AeroBooks has iCloud access.
+              </span>
+              <span data-lang="de">
+                Wenn Backup oder Wiederherstellung nicht funktioniert, stelle sicher,
+                dass iCloud Drive aktiviert ist, du mit der richtigen Apple-ID angemeldet bist
+                und AeroBooks iCloud-Zugriff hat.
+              </span>
             </div>
 
             <div class="info-item">
-              <strong>Reading Data</strong>
-              If covers, progress, or reading history look incorrect, reopen the book detail view, check whether the book is still in your reading list, and verify the latest progress entry in the history list.
+              <strong data-lang="en">Reading Data</strong>
+              <strong data-lang="de">Lesedaten</strong>
+
+              <span data-lang="en">
+                If covers, progress, or reading history look incorrect, reopen the book detail view,
+                check whether the book is still in your reading list, and verify the latest progress entry.
+              </span>
+              <span data-lang="de">
+                Wenn Cover, Fortschritt oder Leseverlauf falsch wirken, öffne die Buchdetails erneut,
+                prüfe, ob das Buch noch in deiner Leseliste ist, und kontrolliere den letzten Fortschrittseintrag.
+              </span>
             </div>
           </div>
 
-          <h2>Response Time</h2>
-          <p>
+          <h2 data-lang="en">Response Time</h2>
+          <h2 data-lang="de">Antwortzeit</h2>
+
+          <p data-lang="en">
             Support requests are usually answered as soon as possible.
           </p>
+          <p data-lang="de">
+            Supportanfragen werden in der Regel so schnell wie möglich beantwortet.
+          </p>
 
-          <h2>When contacting support</h2>
-          <p>Please include these details if possible:</p>
-          <ul>
+          <h2 data-lang="en">When contacting support</h2>
+          <h2 data-lang="de">Bei einer Supportanfrage bitte angeben</h2>
+
+          <p data-lang="en">If possible, include the following details:</p>
+          <p data-lang="de">Wenn möglich, füge bitte folgende Informationen hinzu:</p>
+
+          <ul data-lang="en">
             <li>device model</li>
             <li>iOS version</li>
             <li>app version</li>
             <li>a short description of the issue</li>
           </ul>
+
+          <ul data-lang="de">
+            <li>Gerätemodell</li>
+            <li>iOS-Version</li>
+            <li>App-Version</li>
+            <li>eine kurze Problembeschreibung</li>
+          </ul>
+
+          <div class="quick-links">
+            <a class="button button-secondary" href="mailto:hello.aerostudios@gmail.com">
+              <span>✉️</span>
+              <span data-lang="en">Email Support</span>
+              <span data-lang="de">Support per E-Mail</span>
+            </a>
+
+            <a class="button button-secondary" href="privacy.html">
+              <span>🔒</span>
+              <span data-lang="en">Open Privacy Policy</span>
+              <span data-lang="de">Datenschutz öffnen</span>
+            </a>
+          </div>
         </article>
       </div>
     </section>
@@ -96,10 +205,22 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <div>© 2026 AeroBooks</div>
       <div>
-        <a href="index.html">Home</a> ·
-        <a href="privacy.html">Privacy</a>
+        © 2026 AeroBooks<br />
+        <span class="kicker" data-lang="en">Official support information</span>
+        <span class="kicker" data-lang="de">Offizielle Supportinformationen</span>
+      </div>
+
+      <div>
+        <a href="index.html">
+          <span data-lang="en">Home</span>
+          <span data-lang="de">Start</span>
+        </a>
+        ·
+        <a href="privacy.html">
+          <span data-lang="en">Privacy</span>
+          <span data-lang="de">Datenschutz</span>
+        </a>
       </div>
     </div>
   </footer>
