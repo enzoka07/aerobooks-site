@@ -1,43 +1,82 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AeroBooks – Hilfe & Datenschutz</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #f8f9fb;
-      color: #111;
-      line-height: 1.6;
-    }
-    h1, h2 {
-      color: #0a84ff;
-    }
-    a {
-      color: #0a84ff;
-      text-decoration: none;
-    }
-    .card {
-      background: white;
-      border-radius: 16px;
-      padding: 24px;
-      margin-top: 20px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AeroBooks — Privacy & Support</title>
+  <meta name="description" content="Official AeroBooks support and privacy website." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>AeroBooks</h1>
-  <p>Willkommen auf der offiziellen Hilfe- und Datenschutzseite von AeroBooks.</p>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">A</span>
+        <span>AeroBooks</span>
+      </a>
 
-  <div class="card">
-    <h2>Seiten</h2>
-    <p><a href="privacy.html">Datenschutzerklärung ansehen</a></p>
-    <p><a href="support.html">Support / Hilfe ansehen</a></p>
-  </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <span class="eyebrow">Official Website</span>
+          <h1>Privacy and support, beautifully simple.</h1>
+          <p>
+            Welcome to the official AeroBooks information page. Here you can find
+            support details, app help, and the current privacy policy in one clean place.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="support.html">Get Support</a>
+            <a class="button button-secondary" href="privacy.html">View Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2">
+          <article class="card">
+            <span class="badge">Support</span>
+            <h2>Need help with AeroBooks?</h2>
+            <p>
+              Get assistance with Sign in with Apple, notifications, iCloud backup,
+              reading progress, and general troubleshooting.
+            </p>
+            <a class="button button-secondary" href="support.html">Open Support</a>
+          </article>
+
+          <article class="card">
+            <span class="badge">Privacy</span>
+            <h2>Your data, clearly explained.</h2>
+            <p>
+              Read how AeroBooks handles local data, optional iCloud backups,
+              Sign in with Apple, and Firebase Authentication.
+            </p>
+            <a class="button button-secondary" href="privacy.html">Open Privacy Policy</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© 2026 AeroBooks</div>
+      <div>
+        <a href="privacy.html">Privacy</a> ·
+        <a href="support.html">Support</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
