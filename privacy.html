@@ -6,6 +6,7 @@
   <title>AeroBooks — Privacy Policy</title>
   <meta name="description" content="AeroBooks Privacy Policy" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -15,23 +16,58 @@
         <span>AeroBooks</span>
       </a>
 
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="support.html">Support</a>
-      </nav>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="index.html">
+            <span data-lang="en">Home</span>
+            <span data-lang="de">Start</span>
+          </a>
+          <a href="privacy.html" class="active">
+            <span data-lang="en">Privacy</span>
+            <span data-lang="de">Datenschutz</span>
+          </a>
+          <a href="support.html">
+            <span data-lang="en">Support</span>
+            <span data-lang="de">Support</span>
+          </a>
+        </nav>
+
+        <div class="controls">
+          <div class="segmented" aria-label="Language switcher">
+            <button type="button" data-lang-button="de">DE</button>
+            <button type="button" data-lang-button="en">EN</button>
+          </div>
+
+          <div class="segmented" aria-label="Theme switcher">
+            <button type="button" data-theme-button="light">☀️</button>
+            <button type="button" data-theme-button="auto">◐</button>
+            <button type="button" data-theme-button="dark">🌙</button>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="page-hero">
       <div class="container">
-        <div class="hero-card">
-          <span class="eyebrow">Privacy Policy</span>
-          <h1>Your privacy matters.</h1>
-          <p>
+        <div class="page-hero-card">
+          <span class="eyebrow">
+            <span class="eyebrow-icon">🔒</span>
+            <span data-lang="en">Privacy Policy</span>
+            <span data-lang="de">Datenschutzerklärung</span>
+          </span>
+
+          <h1 data-lang="en">Your privacy matters.</h1>
+          <h1 data-lang="de">Deine Privatsphäre ist wichtig.</h1>
+
+          <p data-lang="en">
             This page explains what AeroBooks processes, why that data may be used,
             and which optional third-party services can be involved.
+          </p>
+          <p data-lang="de">
+            Diese Seite erklärt, welche Daten AeroBooks verarbeitet, warum diese
+            verarbeitet werden können und welche optionalen Drittanbieter beteiligt sein können.
           </p>
         </div>
       </div>
@@ -40,21 +76,37 @@
     <section class="content">
       <div class="container">
         <article class="content-card">
-          <p><strong>Last updated:</strong> March 28, 2026</p>
+          <p data-lang="en"><strong>Last updated:</strong> March 28, 2026</p>
+          <p data-lang="de"><strong>Zuletzt aktualisiert:</strong> 28. März 2026</p>
 
-          <h2>Overview</h2>
-          <p>
+          <h2 data-lang="en">Overview</h2>
+          <h2 data-lang="de">Überblick</h2>
+
+          <p data-lang="en">
             AeroBooks is a reading tracker for managing your library, reviews,
             reading progress, streaks, reminders, and optional account features.
           </p>
-          <p>
+          <p data-lang="de">
+            AeroBooks ist eine Lese-Tracking-App zur Verwaltung deiner Bibliothek,
+            Rezensionen, Lesefortschritte, Streaks, Erinnerungen und optionaler Account-Funktionen.
+          </p>
+
+          <p data-lang="en">
             This Privacy Policy explains what data AeroBooks processes, why it is processed,
             and which third-party services may be involved.
           </p>
+          <p data-lang="de">
+            Diese Datenschutzerklärung erklärt, welche Daten AeroBooks verarbeitet,
+            warum sie verarbeitet werden und welche Drittanbieter-Dienste beteiligt sein können.
+          </p>
 
-          <h2>Data AeroBooks Processes</h2>
-          <p>Depending on how you use the app, AeroBooks may process:</p>
-          <ul>
+          <h2 data-lang="en">Data AeroBooks Processes</h2>
+          <h2 data-lang="de">Welche Daten AeroBooks verarbeitet</h2>
+
+          <p data-lang="en">Depending on how you use the app, AeroBooks may process:</p>
+          <p data-lang="de">Je nach Nutzung der App kann AeroBooks folgende Daten verarbeiten:</p>
+
+          <ul data-lang="en">
             <li>profile information such as your first name and birthday</li>
             <li>account information when you choose Sign in with Apple</li>
             <li>reading data such as saved books, reading status, progress history, reviews, ratings, series, streaks, and streak freezes</li>
@@ -62,91 +114,203 @@
             <li>backup data stored by you in iCloud Drive when iCloud backup is enabled</li>
           </ul>
 
-          <h2>Where Data Is Stored</h2>
-          <p>
+          <ul data-lang="de">
+            <li>Profilinformationen wie Vorname und Geburtstag</li>
+            <li>Account-Informationen, wenn du Sign in with Apple nutzt</li>
+            <li>Lesedaten wie gespeicherte Bücher, Lesestatus, Fortschrittsverlauf, Rezensionen, Bewertungen, Reihen, Streaks und Streak-Freeze-Daten</li>
+            <li>Erinnerungseinstellungen wie Benachrichtigungsstatus und Erinnerungszeit</li>
+            <li>Backup-Daten, die bei aktiviertem iCloud-Backup in iCloud Drive gespeichert werden</li>
+          </ul>
+
+          <h2 data-lang="en">Where Data Is Stored</h2>
+          <h2 data-lang="de">Wo Daten gespeichert werden</h2>
+
+          <p data-lang="en">
             Most AeroBooks data is stored locally on your device.
           </p>
-          <p>
+          <p data-lang="de">
+            Die meisten AeroBooks-Daten werden lokal auf deinem Gerät gespeichert.
+          </p>
+
+          <p data-lang="en">
             If you enable iCloud backup, backup files are stored in your iCloud container
             so you can restore them later on your own devices.
           </p>
+          <p data-lang="de">
+            Wenn du iCloud-Backup aktivierst, werden Backup-Dateien in deinem iCloud-Container gespeichert,
+            damit du sie später auf deinen eigenen Geräten wiederherstellen kannst.
+          </p>
 
-          <h2>Sign in with Apple and Firebase Authentication</h2>
-          <p>
+          <h2 data-lang="en">Sign in with Apple and Firebase Authentication</h2>
+          <h2 data-lang="de">Sign in with Apple und Firebase Authentication</h2>
+
+          <p data-lang="en">
             If you use Sign in with Apple, AeroBooks uses Firebase Authentication
             to complete and manage sign-in.
           </p>
-          <p>This may involve processing account-related identifiers such as:</p>
-          <ul>
+          <p data-lang="de">
+            Wenn du Sign in with Apple nutzt, verwendet AeroBooks Firebase Authentication,
+            um die Anmeldung abzuschließen und zu verwalten.
+          </p>
+
+          <p data-lang="en">This may involve processing account-related identifiers such as:</p>
+          <p data-lang="de">Dabei können kontobezogene Kennungen verarbeitet werden, zum Beispiel:</p>
+
+          <ul data-lang="en">
             <li>your Apple sign-in credential</li>
             <li>an authentication token</li>
             <li>a Firebase user identifier</li>
             <li>your name or email address if provided by Apple during sign-in</li>
           </ul>
-          <p>
+
+          <ul data-lang="de">
+            <li>deine Apple-Anmeldedaten</li>
+            <li>ein Authentifizierungs-Token</li>
+            <li>eine Firebase-Benutzerkennung</li>
+            <li>dein Name oder deine E-Mail-Adresse, sofern Apple diese bei der Anmeldung bereitstellt</li>
+          </ul>
+
+          <p data-lang="en">
             Firebase Authentication is provided by Google. You should also review:
           </p>
+          <p data-lang="de">
+            Firebase Authentication wird von Google bereitgestellt. Du solltest außerdem Folgendes prüfen:
+          </p>
+
           <ul>
             <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Firebase Privacy and Security</a></li>
             <li><a href="https://support.apple.com/" target="_blank" rel="noopener noreferrer">Apple Support Resources</a></li>
           </ul>
 
-          <h2>Notifications</h2>
-          <p>
+          <h2 data-lang="en">Notifications</h2>
+          <h2 data-lang="de">Benachrichtigungen</h2>
+
+          <p data-lang="en">
             If you allow notifications, AeroBooks can send local reminders to help protect your reading streak.
           </p>
-          <p>
+          <p data-lang="de">
+            Wenn du Benachrichtigungen erlaubst, kann AeroBooks lokale Erinnerungen senden,
+            um deine Lesestreak zu unterstützen.
+          </p>
+
+          <p data-lang="en">
             Notification preferences are stored on your device. AeroBooks does not use notifications for advertising.
           </p>
+          <p data-lang="de">
+            Benachrichtigungseinstellungen werden auf deinem Gerät gespeichert.
+            AeroBooks verwendet Benachrichtigungen nicht für Werbung.
+          </p>
 
-          <h2>iCloud Backup</h2>
-          <p>
+          <h2 data-lang="en">iCloud Backup</h2>
+          <h2 data-lang="de">iCloud-Backup</h2>
+
+          <p data-lang="en">
             If you enable iCloud backup, AeroBooks can create backup files containing your reading data and profile data.
           </p>
-          <p>
-            These files are stored in your iCloud storage and are controlled through your Apple account.
+          <p data-lang="de">
+            Wenn du iCloud-Backup aktivierst, kann AeroBooks Backup-Dateien erstellen,
+            die deine Lesedaten und Profildaten enthalten.
           </p>
 
-          <h2>Data Sharing</h2>
-          <p>
+          <p data-lang="en">
+            These files are stored in your iCloud storage and are controlled through your Apple account.
+          </p>
+          <p data-lang="de">
+            Diese Dateien werden in deinem iCloud-Speicher abgelegt und über deinen Apple-Account verwaltet.
+          </p>
+
+          <h2 data-lang="en">Data Sharing</h2>
+          <h2 data-lang="de">Weitergabe von Daten</h2>
+
+          <p data-lang="en">
             AeroBooks does not sell your personal data.
           </p>
-          <p>
+          <p data-lang="de">
+            AeroBooks verkauft keine personenbezogenen Daten.
+          </p>
+
+          <p data-lang="en">
             Your data is only shared with third parties when necessary to provide functionality you choose to use, such as:
           </p>
-          <ul>
+          <p data-lang="de">
+            Deine Daten werden nur dann an Dritte weitergegeben, wenn dies erforderlich ist,
+            um von dir genutzte Funktionen bereitzustellen, zum Beispiel:
+          </p>
+
+          <ul data-lang="en">
             <li>Firebase Authentication for account sign-in</li>
             <li>Apple iCloud services for backup storage</li>
           </ul>
 
-          <h2>Your Choices</h2>
-          <p>You can:</p>
-          <ul>
+          <ul data-lang="de">
+            <li>Firebase Authentication für die Kontoanmeldung</li>
+            <li>Apple iCloud-Dienste für die Backup-Speicherung</li>
+          </ul>
+
+          <h2 data-lang="en">Your Choices</h2>
+          <h2 data-lang="de">Deine Wahlmöglichkeiten</h2>
+
+          <p data-lang="en">You can:</p>
+          <p data-lang="de">Du kannst:</p>
+
+          <ul data-lang="en">
             <li>use the app as a guest without Sign in with Apple</li>
             <li>disable streak reminders</li>
             <li>disable iCloud backup</li>
             <li>reset the app and remove locally stored data from within the app</li>
           </ul>
-          <p>
+
+          <ul data-lang="de">
+            <li>die App als Gast ohne Sign in with Apple nutzen</li>
+            <li>Streak-Erinnerungen deaktivieren</li>
+            <li>iCloud-Backup deaktivieren</li>
+            <li>die App zurücksetzen und lokal gespeicherte Daten in der App entfernen</li>
+          </ul>
+
+          <p data-lang="en">
             You can also manage Sign in with Apple and iCloud settings through your Apple account settings.
           </p>
+          <p data-lang="de">
+            Außerdem kannst du Sign in with Apple und iCloud-Einstellungen in deinem Apple-Account verwalten.
+          </p>
 
-          <h2>Contact</h2>
+          <h2 data-lang="en">Contact</h2>
+          <h2 data-lang="de">Kontakt</h2>
+
           <div class="info-list">
             <div class="info-item">
-              <strong>Name</strong>
+              <strong data-lang="en">Name</strong>
+              <strong data-lang="de">Name</strong>
               Enzo Kaiser
             </div>
+
             <div class="info-item">
-              <strong>Email</strong>
+              <strong data-lang="en">Email</strong>
+              <strong data-lang="de">E-Mail</strong>
               <a href="mailto:hello.aerostudios@gmail.com">hello.aerostudios@gmail.com</a>
             </div>
+
             <div class="info-item">
-              <strong>Support Page</strong>
+              <strong data-lang="en">Support Page</strong>
+              <strong data-lang="de">Support-Seite</strong>
               <a href="https://enzoka07.github.io/aerobooks-site/support.html" target="_blank" rel="noopener noreferrer">
                 https://enzoka07.github.io/aerobooks-site/support.html
               </a>
             </div>
+          </div>
+
+          <div class="quick-links">
+            <a class="button button-secondary" href="support.html">
+              <span>💬</span>
+              <span data-lang="en">Open Support</span>
+              <span data-lang="de">Support öffnen</span>
+            </a>
+
+            <a class="button button-secondary" href="index.html">
+              <span>🏠</span>
+              <span data-lang="en">Back to Home</span>
+              <span data-lang="de">Zurück zur Startseite</span>
+            </a>
           </div>
         </article>
       </div>
@@ -155,10 +319,22 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <div>© 2026 AeroBooks</div>
       <div>
-        <a href="index.html">Home</a> ·
-        <a href="support.html">Support</a>
+        © 2026 AeroBooks<br />
+        <span class="kicker" data-lang="en">Official privacy information</span>
+        <span class="kicker" data-lang="de">Offizielle Datenschutzinformationen</span>
+      </div>
+
+      <div>
+        <a href="index.html">
+          <span data-lang="en">Home</span>
+          <span data-lang="de">Start</span>
+        </a>
+        ·
+        <a href="support.html">
+          <span data-lang="en">Support</span>
+          <span data-lang="de">Support</span>
+        </a>
       </div>
     </div>
   </footer>
