@@ -4,13 +4,14 @@
   const savedTheme = localStorage.getItem("aerobooks-theme") || "auto";
 
   function applyLanguage(lang) {
-    document.querySelectorAll("[data-lang]").forEach((el) => {
-      el.classList.toggle("hide", el.getAttribute("data-lang") !== lang);
+    document.querySelectorAll("[data-lang]").forEach((element) => {
+      element.classList.toggle("hide", element.getAttribute("data-lang") !== lang);
     });
 
-    document.querySelectorAll("[data-lang-button]").forEach((btn) => {
-      btn.classList.toggle("active", btn.getAttribute("data-lang-button") === lang);
-      btn.setAttribute("aria-pressed", btn.classList.contains("active") ? "true" : "false");
+    document.querySelectorAll("[data-lang-button]").forEach((button) => {
+      const isActive = button.getAttribute("data-lang-button") === lang;
+      button.classList.toggle("active", isActive);
+      button.setAttribute("aria-pressed", isActive ? "true" : "false");
     });
 
     document.documentElement.setAttribute("lang", lang === "de" ? "de" : "en");
@@ -24,9 +25,10 @@
       root.setAttribute("data-theme", theme);
     }
 
-    document.querySelectorAll("[data-theme-button]").forEach((btn) => {
-      btn.classList.toggle("active", btn.getAttribute("data-theme-button") === theme);
-      btn.setAttribute("aria-pressed", btn.classList.contains("active") ? "true" : "false");
+    document.querySelectorAll("[data-theme-button]").forEach((button) => {
+      const isActive = button.getAttribute("data-theme-button") === theme;
+      button.classList.toggle("active", isActive);
+      button.setAttribute("aria-pressed", isActive ? "true" : "false");
     });
 
     localStorage.setItem("aerobooks-theme", theme);
