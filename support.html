@@ -4,20 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AeroBooks — Support</title>
-  <meta name="description" content="AeroBooks Support" />
+  <meta
+    name="description"
+    content="AeroBooks support page with contact details, FAQ, troubleshooting, and privacy-related help."
+  />
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand">
+      <a href="index.html" class="brand" aria-label="AeroBooks Home">
         <span class="brand-mark">A</span>
         <span>AeroBooks</span>
       </a>
 
       <div class="nav-right">
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Main navigation">
           <a href="index.html">
             <span data-lang="en">Home</span>
             <span data-lang="de">Start</span>
@@ -34,14 +37,14 @@
 
         <div class="controls">
           <div class="segmented" aria-label="Language switcher">
-            <button type="button" data-lang-button="de">DE</button>
-            <button type="button" data-lang-button="en">EN</button>
+            <button type="button" data-lang-button="de" aria-label="Deutsch">DE</button>
+            <button type="button" data-lang-button="en" aria-label="English">EN</button>
           </div>
 
           <div class="segmented" aria-label="Theme switcher">
-            <button type="button" data-theme-button="light">☀️</button>
-            <button type="button" data-theme-button="auto">◐</button>
-            <button type="button" data-theme-button="dark">🌙</button>
+            <button type="button" data-theme-button="light" aria-label="Light mode">☀️</button>
+            <button type="button" data-theme-button="auto" aria-label="Auto mode">◐</button>
+            <button type="button" data-theme-button="dark" aria-label="Dark mode">🌙</button>
           </div>
         </div>
       </div>
@@ -62,12 +65,12 @@
           <h1 data-lang="de">Wir helfen dir weiter.</h1>
 
           <p data-lang="en">
-            Welcome to AeroBooks Support. Find contact details, common troubleshooting steps,
-            and help for the app’s core features.
+            Find contact information, troubleshooting help, account answers,
+            subscription support, privacy request guidance, and common questions about AeroBooks.
           </p>
           <p data-lang="de">
-            Willkommen beim AeroBooks Support. Hier findest du Kontaktinformationen,
-            häufige Problemlösungen und Hilfe zu den wichtigsten App-Funktionen.
+            Hier findest du Kontaktinformationen, Hilfe bei Problemen, Antworten zu Konto und Abo,
+            Hinweise zu Datenschutzanfragen und häufige Fragen rund um AeroBooks.
           </p>
         </div>
       </div>
@@ -81,112 +84,282 @@
 
           <div class="info-list">
             <div class="info-item">
-              <strong data-lang="en">Name</strong>
-              <strong data-lang="de">Name</strong>
-              Enzo Kaiser
-            </div>
-
-            <div class="info-item">
               <strong data-lang="en">Email</strong>
               <strong data-lang="de">E-Mail</strong>
-              <a href="mailto:hello.aerostudios@gmail.com">hello.aerostudios@gmail.com</a>
+              <a href="mailto:support@aerobooks.app">support@aerobooks.app</a>
+            </div>
+
+            <div class="info-item">
+              <strong data-lang="en">Typical response time</strong>
+              <strong data-lang="de">Typische Antwortzeit</strong>
+              <span data-lang="en">Usually within 1–3 business days.</span>
+              <span data-lang="de">In der Regel innerhalb von 1–3 Werktagen.</span>
             </div>
           </div>
-
-          <h2 data-lang="en">Help Topics</h2>
-          <h2 data-lang="de">Hilfethemen</h2>
-
-          <div class="info-list">
-            <div class="info-item">
-              <strong data-lang="en">Sign in with Apple</strong>
-              <strong data-lang="de">Sign in with Apple</strong>
-
-              <span data-lang="en">
-                If Sign in with Apple does not work, make sure your internet connection is active,
-                restart the app, and confirm that Sign in with Apple is available on your device.
-              </span>
-              <span data-lang="de">
-                Wenn Sign in with Apple nicht funktioniert, prüfe deine Internetverbindung,
-                starte die App neu und kontrolliere, ob Sign in with Apple auf deinem Gerät verfügbar ist.
-              </span>
-            </div>
-
-            <div class="info-item">
-              <strong data-lang="en">Notifications</strong>
-              <strong data-lang="de">Benachrichtigungen</strong>
-
-              <span data-lang="en">
-                If streak reminders do not arrive, open iPhone Settings, choose AeroBooks,
-                allow notifications, and check that the reminder time is enabled in AeroBooks settings.
-              </span>
-              <span data-lang="de">
-                Wenn Streak-Erinnerungen nicht ankommen, öffne die iPhone-Einstellungen,
-                wähle AeroBooks, erlaube Benachrichtigungen und prüfe in der App die Erinnerungszeit.
-              </span>
-            </div>
-
-            <div class="info-item">
-              <strong data-lang="en">iCloud Backup</strong>
-              <strong data-lang="de">iCloud-Backup</strong>
-
-              <span data-lang="en">
-                If backup or restore does not work, make sure iCloud Drive is enabled,
-                confirm that you are signed into the correct Apple ID, and check whether AeroBooks has iCloud access.
-              </span>
-              <span data-lang="de">
-                Wenn Backup oder Wiederherstellung nicht funktioniert, stelle sicher,
-                dass iCloud Drive aktiviert ist, du mit der richtigen Apple-ID angemeldet bist
-                und AeroBooks iCloud-Zugriff hat.
-              </span>
-            </div>
-
-            <div class="info-item">
-              <strong data-lang="en">Reading Data</strong>
-              <strong data-lang="de">Lesedaten</strong>
-
-              <span data-lang="en">
-                If covers, progress, or reading history look incorrect, reopen the book detail view,
-                check whether the book is still in your reading list, and verify the latest progress entry.
-              </span>
-              <span data-lang="de">
-                Wenn Cover, Fortschritt oder Leseverlauf falsch wirken, öffne die Buchdetails erneut,
-                prüfe, ob das Buch noch in deiner Leseliste ist, und kontrolliere den letzten Fortschrittseintrag.
-              </span>
-            </div>
-          </div>
-
-          <h2 data-lang="en">Response Time</h2>
-          <h2 data-lang="de">Antwortzeit</h2>
 
           <p data-lang="en">
-            Support requests are usually answered as soon as possible.
+            Please describe your issue as clearly as possible and include your iOS version
+            and app version if available.
           </p>
           <p data-lang="de">
-            Supportanfragen werden in der Regel so schnell wie möglich beantwortet.
+            Bitte beschreibe dein Anliegen möglichst genau und nenne wenn möglich deine iOS-Version
+            sowie die App-Version.
           </p>
 
-          <h2 data-lang="en">When contacting support</h2>
-          <h2 data-lang="de">Bei einer Supportanfrage bitte angeben</h2>
+          <h2 data-lang="en">Frequently Asked Questions</h2>
+          <h2 data-lang="de">Häufige Fragen (FAQ)</h2>
 
-          <p data-lang="en">If possible, include the following details:</p>
-          <p data-lang="de">Wenn möglich, füge bitte folgende Informationen hinzu:</p>
+          <h3 data-lang="en">Account & Registration</h3>
+          <h3 data-lang="de">Konto & Registrierung</h3>
 
-          <ul data-lang="en">
-            <li>device model</li>
-            <li>iOS version</li>
-            <li>app version</li>
-            <li>a short description of the issue</li>
-          </ul>
+          <div class="faq-list">
+            <div class="faq-item">
+              <strong data-lang="en">How do I create an account?</strong>
+              <strong data-lang="de">Wie erstelle ich ein Konto?</strong>
+              <p data-lang="en">
+                Open AeroBooks and tap “Sign Up”. You only need an email address and a username of your choice.
+              </p>
+              <p data-lang="de">
+                Öffne AeroBooks und tippe auf „Registrieren“. Du benötigst nur eine E-Mail-Adresse
+                und einen frei wählbaren Nutzernamen.
+              </p>
+            </div>
 
-          <ul data-lang="de">
-            <li>Gerätemodell</li>
-            <li>iOS-Version</li>
-            <li>App-Version</li>
-            <li>eine kurze Problembeschreibung</li>
-          </ul>
+            <div class="faq-item">
+              <strong data-lang="en">I forgot my password. What can I do?</strong>
+              <strong data-lang="de">Ich habe mein Passwort vergessen. Was kann ich tun?</strong>
+              <p data-lang="en">
+                Tap “Forgot Password” on the login screen. You will receive an email with a reset link.
+                Please also check your spam folder.
+              </p>
+              <p data-lang="de">
+                Tippe auf der Anmeldeseite auf „Passwort vergessen“. Du erhältst eine E-Mail mit einem Link
+                zum Zurücksetzen. Bitte prüfe auch deinen Spam-Ordner.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <strong data-lang="en">How can I delete my account?</strong>
+              <strong data-lang="de">Wie kann ich mein Konto löschen?</strong>
+              <p data-lang="en">
+                Go to Settings → Account → Delete Account. Deletion is permanent and your data
+                will be fully removed within 30 days.
+              </p>
+              <p data-lang="de">
+                Gehe zu Einstellungen → Konto → Konto löschen. Die Löschung ist endgültig
+                und deine Daten werden innerhalb von 30 Tagen vollständig entfernt.
+              </p>
+            </div>
+          </div>
+
+          <h3 data-lang="en">Social features – Following & Search</h3>
+          <h3 data-lang="de">Soziale Funktionen – Folgen & Suche</h3>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <strong data-lang="en">How do I follow other users?</strong>
+              <strong data-lang="de">Wie folge ich anderen Nutzer:innen?</strong>
+              <p data-lang="en">
+                Open a person’s profile and tap “Follow”. Their book activity can then appear in your feed.
+              </p>
+              <p data-lang="de">
+                Öffne das Profil einer Person und tippe auf „Folgen“. Danach können deren Buchaktivitäten
+                in deinem Feed erscheinen.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <strong data-lang="en">Can I be found by other users?</strong>
+              <strong data-lang="de">Kann ich von anderen gefunden werden?</strong>
+              <p data-lang="en">
+                Yes. Your username may be discoverable through search by default.
+                If you do not want that, you can set your profile to private in the privacy settings.
+              </p>
+              <p data-lang="de">
+                Ja. Dein Nutzername kann standardmäßig über die Suche auffindbar sein.
+                Wenn du das nicht möchtest, kannst du dein Profil in den Privatsphäre-Einstellungen auf privat stellen.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <strong data-lang="en">How do I remove a follower or block someone?</strong>
+              <strong data-lang="de">Wie entferne ich einen Follower oder blockiere jemanden?</strong>
+              <p data-lang="en">
+                Open the profile of that person and tap the three dots in the top-right corner.
+                There you can remove the follower or block the user.
+              </p>
+              <p data-lang="de">
+                Öffne das Profil der Person und tippe auf die drei Punkte oben rechts.
+                Dort kannst du den Follower entfernen oder die Person blockieren.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <strong data-lang="en">Who can see my books and shelves?</strong>
+              <strong data-lang="de">Wer kann meine Bücher und Regale sehen?</strong>
+              <p data-lang="en">
+                With a public profile: all AeroBooks users. With a private profile: only your existing followers.
+              </p>
+              <p data-lang="de">
+                Bei öffentlichem Profil: alle AeroBooks-Nutzer:innen.
+                Bei privatem Profil: nur deine bestehenden Follower.
+              </p>
+            </div>
+          </div>
+
+          <h3 data-lang="en">Subscription & Payment</h3>
+          <h3 data-lang="de">Abo & Zahlung</h3>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <strong data-lang="en">What does the AeroBooks subscription include?</strong>
+              <strong data-lang="de">Was beinhaltet das AeroBooks-Abo?</strong>
+              <p data-lang="en">
+                The subscription is completely optional and supports ongoing app development.
+                Subscription content and pricing are shown directly in the app under AeroBooks Premium.
+              </p>
+              <p data-lang="de">
+                Das Abo ist vollständig freiwillig und unterstützt die Weiterentwicklung der App.
+                Inhalte und Preise siehst du direkt in der App unter AeroBooks Premium.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <strong data-lang="en">How do I cancel my subscription?</strong>
+              <strong data-lang="de">Wie kündige ich mein Abo?</strong>
+              <p data-lang="en">
+                Subscriptions are managed exclusively by Apple.
+                On your iPhone, go to Settings → [your name] → Subscriptions → AeroBooks → Cancel Subscription.
+              </p>
+              <p data-lang="de">
+                Abos werden ausschließlich über Apple verwaltet.
+                Gehe auf deinem iPhone zu Einstellungen → [dein Name] → Abonnements → AeroBooks → Abonnement kündigen.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <strong data-lang="en">Can I request a refund?</strong>
+              <strong data-lang="de">Kann ich eine Rückerstattung beantragen?</strong>
+              <p data-lang="en">
+                Refunds for App Store purchases are handled by Apple.
+                Visit reportaproblem.apple.com and sign in with your Apple ID.
+              </p>
+              <p data-lang="de">
+                Rückerstattungen für App-Store-Käufe werden von Apple bearbeitet.
+                Besuche reportaproblem.apple.com und melde dich mit deiner Apple-ID an.
+              </p>
+            </div>
+          </div>
+
+          <h3 data-lang="en">Privacy & Data</h3>
+          <h3 data-lang="de">Datenschutz & Daten</h3>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <strong data-lang="en">What data does AeroBooks store about me?</strong>
+              <strong data-lang="de">Welche Daten speichert AeroBooks über mich?</strong>
+              <p data-lang="en">
+                We may store your email address, username, and anonymized usage analytics.
+                We do not store your location, contacts, or payment data directly.
+              </p>
+              <p data-lang="de">
+                Wir können deine E-Mail-Adresse, deinen Nutzernamen und anonymisierte Nutzungsanalysen speichern.
+                Standort, Kontakte oder Zahlungsdaten speichern wir nicht direkt.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <strong data-lang="en">How can I access or export my data?</strong>
+              <strong data-lang="de">Wie kann ich meine Daten einsehen oder exportieren?</strong>
+              <p data-lang="en">
+                Send an email to support@aerobooks.app with the subject “Privacy – Access Request”.
+                We will respond within the legally required timeframe.
+              </p>
+              <p data-lang="de">
+                Schreibe eine E-Mail an support@aerobooks.app mit dem Betreff „Datenschutz – Auskunft“.
+                Wir antworten innerhalb der gesetzlich vorgesehenen Frist.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <strong data-lang="en">How can I disable analytics?</strong>
+              <strong data-lang="de">Wie kann ich Analytics deaktivieren?</strong>
+              <p data-lang="en">
+                Go to Settings → Privacy → Analytics & Improvements and disable data sharing if available.
+                You may also manage tracking settings through iOS privacy settings where applicable.
+              </p>
+              <p data-lang="de">
+                Gehe zu Einstellungen → Datenschutz → Analytics & Verbesserungen
+                und deaktiviere dort die Datenfreigabe, sofern verfügbar.
+                Zusätzlich kannst du entsprechende Tracking-Einstellungen in iOS verwalten.
+              </p>
+            </div>
+          </div>
+
+          <h3 data-lang="en">Technical problems</h3>
+          <h3 data-lang="de">Technische Probleme</h3>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <strong data-lang="en">The app crashes or freezes. What should I do?</strong>
+              <strong data-lang="de">Die App stürzt ab oder friert ein. Was soll ich tun?</strong>
+              <ul data-lang="en">
+                <li>fully close and restart the app</li>
+                <li>check for iOS updates</li>
+                <li>check for updates in the App Store</li>
+                <li>reinstall the app if needed</li>
+              </ul>
+              <ul data-lang="de">
+                <li>App vollständig schließen und neu starten</li>
+                <li>iOS-Updates prüfen</li>
+                <li>App-Updates im App Store prüfen</li>
+                <li>App bei Bedarf neu installieren</li>
+              </ul>
+            </div>
+
+            <div class="faq-item">
+              <strong data-lang="en">My books are not syncing.</strong>
+              <strong data-lang="de">Meine Bücher synchronisieren sich nicht.</strong>
+              <p data-lang="en">
+                Make sure you are connected to the internet. Pull down in the book list to trigger a manual sync.
+                If needed, sign out and sign back in.
+              </p>
+              <p data-lang="de">
+                Stelle sicher, dass du mit dem Internet verbunden bist.
+                Ziehe die Bücherliste nach unten, um eine manuelle Synchronisierung zu starten.
+                Falls nötig, melde dich ab und wieder an.
+              </p>
+            </div>
+          </div>
+
+          <h2 data-lang="en">Version & Changelog</h2>
+          <h2 data-lang="de">App-Version & Changelog</h2>
+
+          <p data-lang="en">
+            The latest changelog can be found in the app under Settings → About AeroBooks → Release Notes
+            and on the AeroBooks App Store page.
+          </p>
+          <p data-lang="de">
+            Den aktuellen Changelog findest du in der App unter Einstellungen → Über AeroBooks → Versionshinweise
+            sowie auf der App-Store-Seite von AeroBooks.
+          </p>
+
+          <h2 data-lang="en">Feedback</h2>
+          <h2 data-lang="de">Feedback</h2>
+
+          <p data-lang="en">
+            We appreciate every message. Send us feedback at
+            <a href="mailto:support@aerobooks.app">support@aerobooks.app</a>
+            or leave a review in the App Store.
+          </p>
+          <p data-lang="de">
+            Wir freuen uns über jede Rückmeldung. Schreib uns an
+            <a href="mailto:support@aerobooks.app">support@aerobooks.app</a>
+            oder hinterlasse eine Bewertung im App Store.
+          </p>
 
           <div class="quick-links">
-            <a class="button button-secondary" href="mailto:hello.aerostudios@gmail.com">
+            <a class="button button-primary" href="mailto:support@aerobooks.app">
               <span>✉️</span>
               <span data-lang="en">Email Support</span>
               <span data-lang="de">Support per E-Mail</span>
@@ -207,19 +380,22 @@
     <div class="container footer-inner">
       <div>
         © 2026 AeroBooks<br />
-        <span class="kicker" data-lang="en">Official support information</span>
-        <span class="kicker" data-lang="de">Offizielle Supportinformationen</span>
+        <span data-lang="en">Official support page.</span>
+        <span data-lang="de">Offizielle Support-Seite.</span>
       </div>
 
-      <div>
+      <div class="footer-links">
         <a href="index.html">
           <span data-lang="en">Home</span>
           <span data-lang="de">Start</span>
         </a>
-        ·
         <a href="privacy.html">
           <span data-lang="en">Privacy</span>
           <span data-lang="de">Datenschutz</span>
+        </a>
+        <a href="support.html">
+          <span data-lang="en">Support</span>
+          <span data-lang="de">Support</span>
         </a>
       </div>
     </div>
