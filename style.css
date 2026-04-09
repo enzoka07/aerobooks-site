@@ -133,6 +133,10 @@ img {
   display: block;
 }
 
+.hide {
+  display: none !important;
+}
+
 .container {
   width: min(calc(100% - 32px), var(--max-width));
   margin: 0 auto;
@@ -252,27 +256,6 @@ img {
   box-shadow: var(--shadow-soft);
 }
 
-.icon-button {
-  appearance: none;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text);
-  width: 44px;
-  height: 44px;
-  border-radius: 999px;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
-  transition: 0.18s ease;
-}
-
-.icon-button:hover {
-  transform: translateY(-1px);
-}
-
 main {
   overflow: clip;
 }
@@ -365,7 +348,8 @@ main {
 .section-subtitle,
 .card p,
 .content-card p,
-.content-card li {
+.content-card li,
+.faq-item p {
   color: var(--text-secondary);
 }
 
@@ -375,7 +359,8 @@ main {
   font-size: clamp(1.02rem, 1.8vw, 1.2rem);
 }
 
-.hero-actions {
+.hero-actions,
+.quick-links {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
@@ -478,6 +463,10 @@ main {
 
 .section {
   padding: 30px 0 74px;
+}
+
+.section-tight {
+  padding-top: 0;
 }
 
 .section-title {
@@ -585,6 +574,11 @@ main {
   font-size: 1.5rem;
 }
 
+.content-card h3 {
+  margin: 26px 0 10px;
+  font-size: 1.15rem;
+}
+
 .content-card h2:first-child {
   margin-top: 0;
 }
@@ -593,13 +587,15 @@ main {
   padding-left: 22px;
 }
 
-.info-list {
+.info-list,
+.faq-list {
   display: grid;
   gap: 14px;
   margin-top: 18px;
 }
 
-.info-item {
+.info-item,
+.faq-item {
   background: color-mix(in srgb, var(--surface-strong) 85%, transparent);
   border: 1px solid var(--border);
   border-radius: 20px;
@@ -607,41 +603,46 @@ main {
   box-shadow: var(--shadow-soft);
 }
 
-.info-item strong {
+.info-item strong,
+.faq-item strong {
   display: block;
-  margin-bottom: 5px;
-  color: var(--text);
+  margin-bottom: 8px;
   letter-spacing: -0.02em;
 }
 
-.quick-links {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 24px;
+.faq-item ul {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .footer {
-  padding: 20px 0 50px;
-  color: var(--text-secondary);
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--border-subtle);
+  background: color-mix(in srgb, var(--bg-secondary) 82%, transparent);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
 }
 
 .footer-inner {
   display: flex;
   justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  padding-top: 18px;
-  border-top: 1px solid var(--border-subtle);
 }
 
-.kicker {
-  color: var(--text-tertiary);
-  font-size: 0.95rem;
+.footer-links a {
+  color: var(--text-secondary);
 }
 
-.hide {
-  display: none !important;
+.footer-links a:hover {
+  color: var(--text);
 }
 
 @media (max-width: 980px) {
@@ -650,71 +651,54 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .hero-panel {
-    order: 2;
-  }
-
-  .hero-copy {
-    order: 1;
-  }
-
   .hero-card {
-    padding: 54px 24px 28px;
-    border-radius: 34px;
-  }
-}
-
-@media (max-width: 720px) {
-  .container {
-    width: min(calc(100% - 20px), var(--max-width));
+    padding: 42px 24px 26px;
   }
 
-  .nav {
-    padding: 12px 0;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .nav-right {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .nav-links {
-    gap: 4px;
-  }
-
-  .nav-links a {
-    padding: 9px 12px;
-    font-size: 0.92rem;
-  }
-
-  .hero {
-    padding-top: 26px;
-  }
-
-  .hero-copy h1 {
-    font-size: clamp(2.35rem, 10vw, 4rem);
+  .page-hero-card,
+  .content-card,
+  .card {
+    padding: 24px 20px;
   }
 
   .stats-row {
     grid-template-columns: 1fr;
   }
+}
 
-  .hero-card,
-  .page-hero-card,
-  .content-card,
-  .card {
-    padding-left: 18px;
-    padding-right: 18px;
+@media (max-width: 720px) {
+  .nav {
+    align-items: flex-start;
+    padding: 14px 0;
   }
 
-  .hero-actions,
-  .quick-links {
-    flex-direction: column;
+  .nav-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-links,
+  .controls {
+    width: 100%;
+  }
+
+  .nav-links a {
+    padding: 9px 12px;
+  }
+
+  .hero {
+    padding-top: 34px;
+  }
+
+  .hero-copy h1 {
+    line-height: 1;
   }
 
   .button {
     width: 100%;
+  }
+
+  .quick-links {
+    flex-direction: column;
   }
 }
