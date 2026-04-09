@@ -2,265 +2,564 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AeroBooks – Datenschutzerklärung</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AeroBooks — Datenschutzerklärung</title>
+  <meta
+    name="description"
+    content="Datenschutzerklärung für AeroBooks mit Informationen zu Accounts, Firebase-Synchronisierung, sozialen Funktionen, Analytics und deinen Rechten."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-<div class="wrap">
-<div class="card">
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="AeroBooks Home">
+        <span class="brand-mark">A</span>
+        <span>AeroBooks</span>
+      </a>
 
-<h1>Datenschutzerklärung für AeroBooks</h1>
-<p class="muted">Stand: 09. April 2026</p>
+      <div class="nav-right">
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">
+            <span data-lang="en">Home</span>
+            <span data-lang="de">Start</span>
+          </a>
+          <a href="privacy.html" class="active">
+            <span data-lang="en">Privacy</span>
+            <span data-lang="de">Datenschutz</span>
+          </a>
+          <a href="support.html">
+            <span data-lang="en">Support</span>
+            <span data-lang="de">Support</span>
+          </a>
+        </nav>
 
-<h2>1. Verantwortlicher</h2>
-<p>
-  Verantwortlich im Sinne der Datenschutzgesetze (DSGVO) ist:<br><br>
-  <strong>Enzo Kaiser</strong><br>
-  (Einzelentwickler / App-Betreiber)<br>
-  E-Mail: <a href="mailto:hello.aerostudios@gmail.com">hello.aerostudios@gmail.com</a>
-</p>
+        <div class="controls">
+          <div class="segmented" aria-label="Language switcher">
+            <button type="button" data-lang-button="de" aria-label="Deutsch">DE</button>
+            <button type="button" data-lang-button="en" aria-label="English">EN</button>
+          </div>
 
-<h2>2. Überblick</h2>
-<p>
-  AeroBooks ist eine iOS-App zum Entdecken, Organisieren, Tracken und Teilen von Büchern.
-  Diese Datenschutzerklärung erklärt, welche Daten verarbeitet werden, warum dies geschieht
-  und welche Rechte du als Nutzer:in hast.
-</p>
+          <div class="segmented" aria-label="Theme switcher">
+            <button type="button" data-theme-button="light" aria-label="Light mode">☀️</button>
+            <button type="button" data-theme-button="auto" aria-label="Auto mode">◐</button>
+            <button type="button" data-theme-button="dark" aria-label="Dark mode">🌙</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<p>
-  Wir verarbeiten nur Daten, die notwendig sind, um:
-</p>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-card">
+          <span class="eyebrow">
+            <span class="eyebrow-icon">🔒</span>
+            <span data-lang="en">Privacy Policy</span>
+            <span data-lang="de">Datenschutzerklärung</span>
+          </span>
 
-<ul>
-  <li>die App technisch bereitzustellen</li>
-  <li>Accounts und Synchronisierung zu ermöglichen</li>
-  <li>soziale Funktionen bereitzustellen</li>
-  <li>die App zu verbessern und Fehler zu beheben</li>
-</ul>
+          <h1 data-lang="en">Your privacy matters.</h1>
+          <h1 data-lang="de">Deine Privatsphäre ist wichtig.</h1>
 
----
+          <p data-lang="en">
+            This page explains which data AeroBooks processes, how Firebase is used for account and sync features,
+            how social features work, and which rights you have regarding your personal data.
+          </p>
+          <p data-lang="de">
+            Diese Seite erklärt, welche Daten AeroBooks verarbeitet, wie Firebase für Konto- und Synchronisierungsfunktionen genutzt wird,
+            wie soziale Funktionen funktionieren und welche Rechte du in Bezug auf deine personenbezogenen Daten hast.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<h2>3. Welche Daten verarbeitet werden</h2>
+    <section class="content">
+      <div class="container">
+        <article class="content-card">
+          <p data-lang="en"><strong>Last updated:</strong> April 9, 2026</p>
+          <p data-lang="de"><strong>Stand:</strong> 09. April 2026</p>
 
-<h3>3.1 Kontodaten</h3>
-<ul>
-  <li>E-Mail-Adresse</li>
-  <li>Nutzername / Anzeigename</li>
-  <li>interne Nutzer-ID</li>
-</ul>
+          <h2 data-lang="en">1. Controller</h2>
+          <h2 data-lang="de">1. Verantwortlicher</h2>
 
-<p>
-  Die Anmeldung kann über „Sign in with Apple“ oder andere Authentifizierungsmechanismen erfolgen.
-</p>
+          <p data-lang="en">
+            The controller responsible for data processing within the meaning of applicable privacy laws is:
+          </p>
+          <p data-lang="de">
+            Verantwortlich für die Datenverarbeitung im Sinne der anwendbaren Datenschutzgesetze ist:
+          </p>
 
----
+          <div class="info-list">
+            <div class="info-item">
+              <strong data-lang="en">Name</strong>
+              <strong data-lang="de">Name</strong>
+              Enzo Kaiser
+            </div>
 
-<h3>3.2 Profildaten</h3>
-<ul>
-  <li>Name oder Anzeigename</li>
-  <li>Geburtsdatum (optional)</li>
-  <li>Profilbild (optional)</li>
-  <li>individuelle Einstellungen</li>
-</ul>
+            <div class="info-item">
+              <strong data-lang="en">Address</strong>
+              <strong data-lang="de">Anschrift</strong>
+              [DEINE LADUNGSFÄHIGE ANSCHRIFT]
+            </div>
 
----
+            <div class="info-item">
+              <strong data-lang="en">Email</strong>
+              <strong data-lang="de">E-Mail</strong>
+              <a href="mailto:hello.aerostudios@gmail.com">hello.aerostudios@gmail.com</a>
+            </div>
+          </div>
 
-<h3>3.3 App- und Nutzungsdaten</h3>
-<ul>
-  <li>gespeicherte Bücher</li>
-  <li>Lesestatus und Fortschritt</li>
-  <li>Rezensionen und Bewertungen</li>
-  <li>Streaks und Statistiken</li>
-  <li>Regale und Listen</li>
-</ul>
+          <h2 data-lang="en">2. Overview</h2>
+          <h2 data-lang="de">2. Überblick</h2>
 
----
+          <p data-lang="en">
+            AeroBooks is an iOS app for discovering, organizing, tracking, and sharing books.
+            This Privacy Policy explains which data may be processed, why it is processed,
+            and what rights you have as a user.
+          </p>
+          <p data-lang="de">
+            AeroBooks ist eine iOS-App zum Entdecken, Organisieren, Tracken und Teilen von Büchern.
+            Diese Datenschutzerklärung erklärt, welche Daten verarbeitet werden können, warum dies geschieht
+            und welche Rechte du als Nutzer:in hast.
+          </p>
 
-<h3>3.4 Firebase (Cloud-Speicherung & Synchronisierung)</h3>
-<p>
-  AeroBooks nutzt Google Firebase, um Daten zu speichern und zwischen Geräten zu synchronisieren.
-</p>
+          <p data-lang="en">
+            We only process data that is necessary to provide the app, accounts, synchronization,
+            social features, support, security, and product improvement.
+          </p>
+          <p data-lang="de">
+            Wir verarbeiten nur Daten, die erforderlich sind, um die App, Konten, Synchronisierung,
+            soziale Funktionen, Support, Sicherheit und die Verbesserung des Produkts bereitzustellen.
+          </p>
 
-<p>
-  Dabei können folgende Daten in Firebase gespeichert werden:
-</p>
+          <h2 data-lang="en">3. Categories of data processed</h2>
+          <h2 data-lang="de">3. Kategorien verarbeiteter Daten</h2>
 
-<ul>
-  <li>Kontodaten und Nutzer-ID</li>
-  <li>Profildaten</li>
-  <li>Bücher, Fortschritt und Aktivitäten</li>
-  <li>soziale Daten (Follower, Interaktionen)</li>
-</ul>
+          <h3 data-lang="en">3.1 Account data</h3>
+          <h3 data-lang="de">3.1 Kontodaten</h3>
 
-<p>
-  Diese Speicherung ist notwendig, damit:
-</p>
+          <ul data-lang="en">
+            <li>email address</li>
+            <li>username / display name</li>
+            <li>internal user ID</li>
+            <li>authentication-related identifiers required for sign-in</li>
+          </ul>
 
-<ul>
-  <li>dein Account funktioniert</li>
-  <li>deine Daten geräteübergreifend verfügbar sind</li>
-  <li>soziale Funktionen möglich sind</li>
-</ul>
+          <ul data-lang="de">
+            <li>E-Mail-Adresse</li>
+            <li>Nutzername / Anzeigename</li>
+            <li>interne Nutzer-ID</li>
+            <li>anmeldebezogene Kennungen, die für den Login erforderlich sind</li>
+          </ul>
 
----
+          <p data-lang="en">
+            AeroBooks may use services such as Sign in with Apple and Firebase Authentication
+            to enable secure account access.
+          </p>
+          <p data-lang="de">
+            AeroBooks kann Dienste wie Sign in with Apple und Firebase Authentication verwenden,
+            um einen sicheren Kontozugang zu ermöglichen.
+          </p>
 
-<h3>3.5 Soziale Funktionen</h3>
-<p>
-  AeroBooks enthält soziale Funktionen.
-</p>
+          <h3 data-lang="en">3.2 Profile data</h3>
+          <h3 data-lang="de">3.2 Profildaten</h3>
 
-<p>
-  Das bedeutet:
-</p>
+          <ul data-lang="en">
+            <li>display name or profile name</li>
+            <li>birthday, if you provide it</li>
+            <li>profile image, if you upload one</li>
+            <li>profile preferences and settings</li>
+          </ul>
 
-<ul>
-  <li>dein Nutzername kann für andere auffindbar sein</li>
-  <li>andere Nutzer:innen können dir folgen</li>
-  <li>du kannst anderen folgen</li>
-  <li>öffentliche Inhalte (z. B. Bücher, Aktivitäten) können sichtbar sein</li>
-  <li>Follower-Beziehungen werden gespeichert</li>
-</ul>
+          <ul data-lang="de">
+            <li>Anzeigename oder Profilname</li>
+            <li>Geburtsdatum, sofern du es angibst</li>
+            <li>Profilbild, sofern du eines hochlädst</li>
+            <li>Profileinstellungen und Präferenzen</li>
+          </ul>
 
-<p>
-  Die Sichtbarkeit hängt von den jeweiligen App-Einstellungen (z. B. öffentlich/privat) ab.
-</p>
+          <h3 data-lang="en">3.3 Reading and app data</h3>
+          <h3 data-lang="de">3.3 Lese- und App-Daten</h3>
 
----
+          <ul data-lang="en">
+            <li>saved books and library entries</li>
+            <li>reading status, reading progress, and reading history</li>
+            <li>reviews, ratings, shelves, lists, and book-related activity</li>
+            <li>streaks, statistics, goals, and reminder preferences</li>
+          </ul>
 
-<h3>3.6 Analytics & Crashlytics</h3>
-<p>
-  AeroBooks nutzt Firebase Analytics und Firebase Crashlytics zur Verbesserung der App.
-</p>
+          <ul data-lang="de">
+            <li>gespeicherte Bücher und Bibliothekseinträge</li>
+            <li>Lesestatus, Lesefortschritt und Leseverlauf</li>
+            <li>Rezensionen, Bewertungen, Regale, Listen und buchbezogene Aktivitäten</li>
+            <li>Streaks, Statistiken, Ziele und Erinnerungseinstellungen</li>
+          </ul>
 
-<p>
-  Dabei können verarbeitet werden:
-</p>
+          <h3 data-lang="en">3.4 Firebase storage and synchronization</h3>
+          <h3 data-lang="de">3.4 Firebase-Speicherung und Synchronisierung</h3>
 
-<ul>
-  <li>App-Nutzung (z. B. genutzte Funktionen)</li>
-  <li>Gerätetyp und iOS-Version</li>
-  <li>Absturzberichte und Fehlerdaten</li>
-  <li>pseudonyme Geräteinformationen</li>
-</ul>
+          <p data-lang="en">
+            AeroBooks uses Google Firebase to store data and synchronize it across devices.
+            This is necessary so that account-based and online features work reliably.
+          </p>
+          <p data-lang="de">
+            AeroBooks nutzt Google Firebase, um Daten zu speichern und zwischen Geräten zu synchronisieren.
+            Dies ist erforderlich, damit konto- und onlinebasierte Funktionen zuverlässig funktionieren.
+          </p>
 
-<p>
-  Diese Daten dienen ausschließlich:
-</p>
+          <p data-lang="en">Depending on the features used, Firebase may store:</p>
+          <p data-lang="de">Je nach genutzten Funktionen können in Firebase gespeichert werden:</p>
 
-<ul>
-  <li>der Fehleranalyse</li>
-  <li>der Stabilität</li>
-  <li>der Produktverbesserung</li>
-</ul>
+          <ul data-lang="en">
+            <li>account-related data and user identifiers</li>
+            <li>profile-related data</li>
+            <li>saved books, progress, reviews, and activity data</li>
+            <li>social connections such as followers and following relationships</li>
+            <li>technical information needed for synchronization and app operation</li>
+          </ul>
 
-<p>
-  Es erfolgt kein Verkauf personenbezogener Daten.
-</p>
+          <ul data-lang="de">
+            <li>kontobezogene Daten und Nutzerkennungen</li>
+            <li>profilbezogene Daten</li>
+            <li>gespeicherte Bücher, Fortschritt, Rezensionen und Aktivitätsdaten</li>
+            <li>soziale Verbindungen wie Follower- und Gefolgt-Beziehungen</li>
+            <li>technische Informationen, die für Synchronisierung und App-Betrieb erforderlich sind</li>
+          </ul>
 
----
+          <h3 data-lang="en">3.5 Social features</h3>
+          <h3 data-lang="de">3.5 Soziale Funktionen</h3>
 
-<h3>3.7 Käufe & Abonnements</h3>
-<p>
-  Käufe werden ausschließlich über Apple (App Store) abgewickelt.
-</p>
+          <p data-lang="en">
+            AeroBooks includes social features. Depending on app settings and feature design,
+            users may be able to find other users, follow them, and view visible content.
+          </p>
+          <p data-lang="de">
+            AeroBooks enthält soziale Funktionen. Je nach App-Einstellungen und Funktionsdesign
+            können Nutzer:innen andere Nutzer:innen finden, ihnen folgen und sichtbare Inhalte ansehen.
+          </p>
 
-<p>
-  Wir speichern keine Zahlungsdaten. Apple stellt uns lediglich Statusinformationen
-  (z. B. aktives Abo) zur Verfügung.
-</p>
+          <ul data-lang="en">
+            <li>your username may be searchable by other users</li>
+            <li>your profile may be visible inside the app</li>
+            <li>other users may be able to follow you</li>
+            <li>you may be able to follow other users</li>
+            <li>publicly visible book-related activity may be visible to other users</li>
+          </ul>
 
----
+          <ul data-lang="de">
+            <li>dein Nutzername kann für andere Nutzer:innen suchbar sein</li>
+            <li>dein Profil kann innerhalb der App sichtbar sein</li>
+            <li>andere Nutzer:innen können dir folgen</li>
+            <li>du kannst anderen Nutzer:innen folgen</li>
+            <li>öffentlich sichtbare buchbezogene Aktivitäten können für andere Nutzer:innen sichtbar sein</li>
+          </ul>
 
-<h3>3.8 Support</h3>
-<p>
-  Wenn du uns kontaktierst, speichern wir deine Nachricht und die enthaltenen Daten,
-  um dein Anliegen zu bearbeiten.
-</p>
+          <p data-lang="en">
+            If AeroBooks offers privacy settings such as public or private profiles,
+            the visibility of your data depends on those settings.
+          </p>
+          <p data-lang="de">
+            Falls AeroBooks Privatsphäre-Einstellungen wie öffentliche oder private Profile anbietet,
+            hängt die Sichtbarkeit deiner Daten von diesen Einstellungen ab.
+          </p>
 
----
+          <h3 data-lang="en">3.6 Analytics and crash reports</h3>
+          <h3 data-lang="de">3.6 Analytics und Absturzberichte</h3>
 
-<h2>4. Rechtsgrundlagen (DSGVO)</h2>
-<ul>
-  <li>Art. 6 Abs. 1 lit. b – Vertragserfüllung (Account, Sync, Funktionen)</li>
-  <li>Art. 6 Abs. 1 lit. f – berechtigtes Interesse (Verbesserung, Sicherheit)</li>
-  <li>Art. 6 Abs. 1 lit. a – Einwilligung (z. B. Notifications)</li>
-</ul>
+          <p data-lang="en">
+            AeroBooks may use Firebase Analytics and Firebase Crashlytics
+            to improve app performance, identify technical issues, and make the app more stable.
+          </p>
+          <p data-lang="de">
+            AeroBooks kann Firebase Analytics und Firebase Crashlytics verwenden,
+            um die App-Leistung zu verbessern, technische Probleme zu erkennen und die App stabiler zu machen.
+          </p>
 
----
+          <ul data-lang="en">
+            <li>feature usage data</li>
+            <li>device type and operating system version</li>
+            <li>technical usage information</li>
+            <li>app crashes and error reports</li>
+            <li>pseudonymous device-related information</li>
+          </ul>
 
-<h2>5. Drittanbieter</h2>
-<ul>
-  <li>Apple (App Store, Sign in with Apple, Käufe)</li>
-  <li>Google Firebase (Auth, Datenbank, Analytics, Crashlytics)</li>
-  <li>Google Books API (Buchdaten)</li>
-</ul>
+          <ul data-lang="de">
+            <li>Daten zur Funktionsnutzung</li>
+            <li>Gerätetyp und Betriebssystemversion</li>
+            <li>technische Nutzungsinformationen</li>
+            <li>App-Abstürze und Fehlerberichte</li>
+            <li>pseudonyme gerätebezogene Informationen</li>
+          </ul>
 
-<p>
-  Weitere Infos:
-  <a href="https://firebase.google.com/support/privacy" target="_blank">
-    Firebase Privacy
-  </a>
-</p>
+          <h3 data-lang="en">3.7 Purchases and subscriptions</h3>
+          <h3 data-lang="de">3.7 Käufe und Abonnements</h3>
 
----
+          <p data-lang="en">
+            Purchases and subscriptions are processed through Apple.
+            AeroBooks does not directly store full payment details such as credit card data.
+          </p>
+          <p data-lang="de">
+            Käufe und Abonnements werden über Apple verarbeitet.
+            AeroBooks speichert keine vollständigen Zahlungsdaten wie Kreditkartendaten direkt.
+          </p>
 
-<h2>6. Internationale Datenübertragung</h2>
-<p>
-  Daten können in die USA übertragen werden (z. B. Firebase).
-  Dies erfolgt unter Verwendung geeigneter Schutzmechanismen (z. B. Standardvertragsklauseln).
-</p>
+          <p data-lang="en">
+            We may process subscription status information where necessary to unlock app features.
+          </p>
+          <p data-lang="de">
+            Wir können den Abo-Status verarbeiten, soweit dies erforderlich ist, um App-Funktionen freizuschalten.
+          </p>
 
----
+          <h3 data-lang="en">3.8 Support communication</h3>
+          <h3 data-lang="de">3.8 Support-Kommunikation</h3>
 
-<h2>7. Speicherdauer</h2>
-<ul>
-  <li>Daten werden gespeichert, solange dein Account existiert</li>
-  <li>Nach Löschung werden Daten innerhalb eines angemessenen Zeitraums entfernt</li>
-</ul>
+          <p data-lang="en">
+            If you contact us by email, we process your message and the information it contains
+            in order to handle your request.
+          </p>
+          <p data-lang="de">
+            Wenn du uns per E-Mail kontaktierst, verarbeiten wir deine Nachricht und die darin enthaltenen Angaben,
+            um dein Anliegen zu bearbeiten.
+          </p>
 
----
+          <h2 data-lang="en">4. Purposes of processing</h2>
+          <h2 data-lang="de">4. Zwecke der Verarbeitung</h2>
 
-<h2>8. Deine Rechte</h2>
-<ul>
-  <li>Auskunft (Art. 15 DSGVO)</li>
-  <li>Berichtigung (Art. 16 DSGVO)</li>
-  <li>Löschung (Art. 17 DSGVO)</li>
-  <li>Einschränkung (Art. 18 DSGVO)</li>
-  <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
-  <li>Widerspruch (Art. 21 DSGVO)</li>
-</ul>
+          <p data-lang="en">We process data in particular to:</p>
+          <p data-lang="de">Wir verarbeiten Daten insbesondere, um:</p>
 
-<p>
-  Kontakt:
-  <a href="mailto:hello.aerostudios@gmail.com">hello.aerostudios@gmail.com</a>
-</p>
+          <ul data-lang="en">
+            <li>provide the app and its functions</li>
+            <li>create and manage accounts</li>
+            <li>synchronize data across devices</li>
+            <li>enable social and community features</li>
+            <li>ensure app security and technical stability</li>
+            <li>improve the product and fix bugs</li>
+            <li>respond to support requests</li>
+          </ul>
 
----
+          <ul data-lang="de">
+            <li>die App und ihre Funktionen bereitzustellen</li>
+            <li>Konten zu erstellen und zu verwalten</li>
+            <li>Daten zwischen Geräten zu synchronisieren</li>
+            <li>soziale und Community-Funktionen zu ermöglichen</li>
+            <li>App-Sicherheit und technische Stabilität sicherzustellen</li>
+            <li>das Produkt zu verbessern und Fehler zu beheben</li>
+            <li>auf Support-Anfragen zu antworten</li>
+          </ul>
 
-<h2>9. Kinder</h2>
-<p>
-  AeroBooks richtet sich nicht gezielt an Kinder unter 13 Jahren.
-  Es werden keine bewusst personenbezogenen Daten von Kindern ohne Zustimmung der Eltern erhoben.
-</p>
+          <h2 data-lang="en">5. Legal bases under GDPR</h2>
+          <h2 data-lang="de">5. Rechtsgrundlagen nach DSGVO</h2>
 
----
+          <ul data-lang="en">
+            <li>Art. 6(1)(b) GDPR – performance of a contract, especially for accounts, sync, and app features</li>
+            <li>Art. 6(1)(f) GDPR – legitimate interests, especially for security, stability, error analysis, and product improvement</li>
+            <li>Art. 6(1)(a) GDPR – consent, where consent is required, for example for certain notifications or optional processing</li>
+            <li>Art. 6(1)(c) GDPR – compliance with legal obligations where applicable</li>
+          </ul>
 
-<h2>10. Datensicherheit</h2>
-<p>
-  Wir verwenden angemessene technische und organisatorische Maßnahmen zum Schutz deiner Daten.
-</p>
+          <ul data-lang="de">
+            <li>Art. 6 Abs. 1 lit. b DSGVO – Vertragserfüllung, insbesondere für Konten, Synchronisierung und App-Funktionen</li>
+            <li>Art. 6 Abs. 1 lit. f DSGVO – berechtigte Interessen, insbesondere für Sicherheit, Stabilität, Fehleranalyse und Produktverbesserung</li>
+            <li>Art. 6 Abs. 1 lit. a DSGVO – Einwilligung, soweit diese erforderlich ist, z. B. für bestimmte Benachrichtigungen oder optionale Verarbeitungen</li>
+            <li>Art. 6 Abs. 1 lit. c DSGVO – Erfüllung rechtlicher Pflichten, soweit anwendbar</li>
+          </ul>
 
----
+          <h2 data-lang="en">6. Recipients and third-party services</h2>
+          <h2 data-lang="de">6. Empfänger und Drittanbieter-Dienste</h2>
 
-<h2>11. Änderungen</h2>
-<p>
-  Diese Datenschutzerklärung kann aktualisiert werden.
-  Es gilt die jeweils aktuelle Version.
-</p>
+          <p data-lang="en">AeroBooks may use third-party providers such as:</p>
+          <p data-lang="de">AeroBooks kann Drittanbieter wie folgende nutzen:</p>
 
-</div>
-</div>
+          <ul data-lang="en">
+            <li>Apple (App Store, Sign in with Apple, purchases, subscriptions, system services)</li>
+            <li>Google Firebase (Authentication, database, synchronization, analytics, crash reporting)</li>
+            <li>Google Books API (book search and metadata)</li>
+          </ul>
+
+          <ul data-lang="de">
+            <li>Apple (App Store, Sign in with Apple, Käufe, Abonnements, Systemdienste)</li>
+            <li>Google Firebase (Authentifizierung, Datenbank, Synchronisierung, Analytics, Absturzberichte)</li>
+            <li>Google Books API (Buchsuche und Metadaten)</li>
+          </ul>
+
+          <p>
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+              Firebase Privacy and Security
+            </a>
+          </p>
+
+          <h2 data-lang="en">7. International data transfers</h2>
+          <h2 data-lang="de">7. Internationale Datenübermittlungen</h2>
+
+          <p data-lang="en">
+            Data may be processed in countries outside your country of residence, including the United States.
+            Where required, appropriate safeguards such as Standard Contractual Clauses may be used.
+          </p>
+          <p data-lang="de">
+            Daten können in Ländern außerhalb deines Wohnsitzlandes verarbeitet werden, einschließlich der USA.
+            Soweit erforderlich, werden geeignete Garantien wie Standardvertragsklauseln verwendet.
+          </p>
+
+          <h2 data-lang="en">8. Data retention and deletion</h2>
+          <h2 data-lang="de">8. Speicherdauer und Löschung</h2>
+
+          <p data-lang="en">
+            We store personal data only as long as necessary for the stated purposes,
+            unless longer retention is required by law.
+          </p>
+          <p data-lang="de">
+            Wir speichern personenbezogene Daten nur so lange, wie dies für die genannten Zwecke erforderlich ist,
+            sofern keine längere gesetzliche Aufbewahrungspflicht besteht.
+          </p>
+
+          <ul data-lang="en">
+            <li>account-related data is generally stored while your account exists</li>
+            <li>synchronization and social data is stored as long as needed for the service</li>
+            <li>support data may be stored as long as required to handle and document the request</li>
+            <li>after account deletion, associated data is deleted or anonymized within an appropriate period unless legal reasons require otherwise</li>
+          </ul>
+
+          <ul data-lang="de">
+            <li>kontobezogene Daten werden grundsätzlich gespeichert, solange dein Konto besteht</li>
+            <li>Synchronisierungs- und Sozialdaten werden gespeichert, solange sie für den Dienst benötigt werden</li>
+            <li>Support-Daten können so lange gespeichert werden, wie dies zur Bearbeitung und Dokumentation des Anliegens erforderlich ist</li>
+            <li>nach Kontolöschung werden zugehörige Daten innerhalb eines angemessenen Zeitraums gelöscht oder anonymisiert, sofern keine gesetzlichen Gründe entgegenstehen</li>
+          </ul>
+
+          <h2 data-lang="en">9. Your rights</h2>
+          <h2 data-lang="de">9. Deine Rechte</h2>
+
+          <p data-lang="en">Depending on applicable law, you may have the right to:</p>
+          <p data-lang="de">Je nach anwendbarem Recht kannst du insbesondere folgende Rechte haben:</p>
+
+          <ul data-lang="en">
+            <li>access your stored data</li>
+            <li>request rectification of inaccurate data</li>
+            <li>request deletion of your data</li>
+            <li>request restriction of processing</li>
+            <li>object to certain processing</li>
+            <li>request data portability where applicable</li>
+            <li>withdraw consent with effect for the future where processing is based on consent</li>
+            <li>lodge a complaint with a supervisory authority</li>
+          </ul>
+
+          <ul data-lang="de">
+            <li>Auskunft über deine gespeicherten Daten</li>
+            <li>Berichtigung unrichtiger Daten</li>
+            <li>Löschung deiner Daten</li>
+            <li>Einschränkung der Verarbeitung</li>
+            <li>Widerspruch gegen bestimmte Verarbeitungen</li>
+            <li>Datenübertragbarkeit, soweit anwendbar</li>
+            <li>Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft, soweit die Verarbeitung auf Einwilligung beruht</li>
+            <li>Beschwerde bei einer Aufsichtsbehörde</li>
+          </ul>
+
+          <p data-lang="en">
+            Privacy requests can be sent to:
+            <a href="mailto:hello.aerostudios@gmail.com">hello.aerostudios@gmail.com</a>
+          </p>
+          <p data-lang="de">
+            Datenschutzanfragen kannst du senden an:
+            <a href="mailto:hello.aerostudios@gmail.com">hello.aerostudios@gmail.com</a>
+          </p>
+
+          <h2 data-lang="en">10. California privacy rights</h2>
+          <h2 data-lang="de">10. Datenschutzrechte nach kalifornischem Recht</h2>
+
+          <p data-lang="en">
+            Where applicable under California law (such as CCPA/CPRA), users may have rights to know,
+            correct, delete, and access certain personal data. AeroBooks does not sell personal data
+            in the sense of CCPA/CPRA.
+          </p>
+          <p data-lang="de">
+            Soweit nach kalifornischem Recht anwendbar (z. B. CCPA/CPRA), können Nutzer:innen Rechte auf Auskunft,
+            Berichtigung, Löschung und Zugang zu bestimmten personenbezogenen Daten haben.
+            AeroBooks verkauft keine personenbezogenen Daten im Sinne des CCPA/CPRA.
+          </p>
+
+          <h2 data-lang="en">11. Children</h2>
+          <h2 data-lang="de">11. Kinder</h2>
+
+          <p data-lang="en">
+            AeroBooks is not specifically directed at children under 13 years of age.
+            We do not knowingly collect personal data from children without the required legal basis or parental consent where required.
+          </p>
+          <p data-lang="de">
+            AeroBooks richtet sich nicht gezielt an Kinder unter 13 Jahren.
+            Wir erheben wissentlich keine personenbezogenen Daten von Kindern ohne die erforderliche Rechtsgrundlage
+            oder, soweit notwendig, ohne Zustimmung der Eltern.
+          </p>
+
+          <h2 data-lang="en">12. Data security</h2>
+          <h2 data-lang="de">12. Datensicherheit</h2>
+
+          <p data-lang="en">
+            We use appropriate technical and organizational measures to protect personal data
+            against unauthorized access, loss, misuse, or unlawful processing.
+          </p>
+          <p data-lang="de">
+            Wir verwenden angemessene technische und organisatorische Maßnahmen,
+            um personenbezogene Daten vor unbefugtem Zugriff, Verlust, Missbrauch oder unrechtmäßiger Verarbeitung zu schützen.
+          </p>
+
+          <h2 data-lang="en">13. Changes to this Privacy Policy</h2>
+          <h2 data-lang="de">13. Änderungen dieser Datenschutzerklärung</h2>
+
+          <p data-lang="en">
+            This Privacy Policy may be updated from time to time if the app, its functions,
+            or legal requirements change. The currently published version applies.
+          </p>
+          <p data-lang="de">
+            Diese Datenschutzerklärung kann von Zeit zu Zeit aktualisiert werden,
+            wenn sich die App, ihre Funktionen oder rechtliche Anforderungen ändern.
+            Es gilt die jeweils veröffentlichte aktuelle Fassung.
+          </p>
+
+          <div class="quick-links">
+            <a class="button button-secondary" href="support.html">
+              <span>💬</span>
+              <span data-lang="en">Open Support</span>
+              <span data-lang="de">Support öffnen</span>
+            </a>
+
+            <a class="button button-secondary" href="mailto:hello.aerostudios@gmail.com">
+              <span>✉️</span>
+              <span data-lang="en">Contact Privacy Support</span>
+              <span data-lang="de">Datenschutz kontaktieren</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        © 2026 AeroBooks<br />
+        <span data-lang="en">Official privacy information page.</span>
+        <span data-lang="de">Offizielle Datenschutzseite.</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">
+          <span data-lang="en">Home</span>
+          <span data-lang="de">Start</span>
+        </a>
+        <a href="privacy.html">
+          <span data-lang="en">Privacy</span>
+          <span data-lang="de">Datenschutz</span>
+        </a>
+        <a href="support.html">
+          <span data-lang="en">Support</span>
+          <span data-lang="de">Support</span>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
